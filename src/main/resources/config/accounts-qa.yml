@@ -1,6 +1,0 @@
-spring:
-  jpa:
-    show-sql: false # Logs SQL statements to the console
-
-build:
-  version: 0.0.2
