@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:h2:mem:testdb # Connects to an in-memory database named 'testdb'
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true # Enables the H2 console for web-based access
+      path: /h2-console # Specifies the URL path for the console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # Specifies the Hibernate dialect for H2
+    hibernate:
+      ddl-auto: validate # Controls schema generation (e.g., create, update, validate, none)
