@@ -1,6 +1,6 @@
+server:
+  port: 8080
 spring:
-  application:
-    name: accounts
   datasource:
     url: jdbc:h2:mem:testdb # Connects to an in-memory database named 'testdb'
     driver-class-name: org.h2.Driver
