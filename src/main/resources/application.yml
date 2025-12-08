@@ -5,9 +5,13 @@ spring:
   application:
     name: configserver
   profiles:
-    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-          search-locations: file:////Users/areeba/Desktop/udemy-workspaces/config-server-files
+        git:
+          uri: https://github.com/majdhaidar/config-server-files-spring-three.git
+          default-label: master
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
