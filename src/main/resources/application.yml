@@ -15,3 +15,6 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
+
+encrypt:
+  key: "533e99f2-f770-42fa-af2d-5fa46d15ad84"
